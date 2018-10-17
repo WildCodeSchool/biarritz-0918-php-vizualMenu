@@ -9,7 +9,8 @@
       <meta name="author" content="Hugo Martin">
 
       <!-- Bootstrap core CSS -->
-      {!!Html::style('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css') !!}
+
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
 
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -27,7 +28,30 @@
   <body>
 
     <header>
-        
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top align-items-end px-4 border" id="navMenuPublic">
+            
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link d-none d-sm-block" href="#">Login</a>
+                    <a class="nav-link d-block d-sm-none" href="#">icoLog</a>
+                </li>
+            </ul>
+
+            <a class="navbar-brand" href="#">Vizualmenu</a>
+
+            <ul class="ml-auto lang-select navbar-nav" id="navPublic-drop">       
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPublicDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPublicDropdownLang">
+                        <a class="dropdown-item" href="#">FR</a>
+                        <a class="dropdown-item" href="#">ES</a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+
     </header>
 
     <main>
@@ -38,9 +62,10 @@
 
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    {!!Html::script('js/jquery.js')!!}
-    {!!Html::script('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js')!!}
 
 
   </body>
