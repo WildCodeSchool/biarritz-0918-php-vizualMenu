@@ -1,14 +1,14 @@
 #find-a-restaurant
 {
     height : 400px;
-    padding-top: 15%;
+    padding-top: 100px;
     background-image: url(resto.jpg);
     background-repeat: no-repeat;
 }
 
 #title-restaurant-around
 {
-    margin-bottom : 10%;
+    margin-bottom : 50px;
     color : whitesmoke;
 }
 
