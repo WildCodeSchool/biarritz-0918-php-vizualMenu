@@ -2,11 +2,14 @@
 {
     height : 400px;
     padding-top: 15%;
+    background-image: url(resto.jpg);
+    background-repeat: no-repeat;
 }
 
 #title-restaurant-around
 {
     margin-bottom : 10%;
+    color : whitesmoke;
 }
 
 a.itemCard
