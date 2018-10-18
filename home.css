@@ -92,3 +92,9 @@ a.itemCard
   font-size: medium;
   font-weight: bold;
 }
+
+footer
+{
+    color : gray;
+    background-color: black;
+}
