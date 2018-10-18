@@ -8,3 +8,87 @@
 {
     margin-bottom : 10%;
 }
+
+a.itemCard
+{
+  text-decoration:none;
+}
+
+.card
+{
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 350px;
+}
+
+
+.img-menu
+{
+  display: block;
+  max-height: 263px;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+
+
+@media (min-width: 576px)
+{
+
+
+  .card
+  {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    height : 200px;
+    max-width: 100%;
+  }
+
+  .card-body
+  {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+
+  .img-menu
+  {
+    /* max-width: 50%; */
+    width: 233px;
+    height: 100%;
+  }
+
+}
+
+.card-title
+{
+  /* font-family: 'Raleway-ExtraBold'; */
+  font-size: large;
+  color: rgb(45,60,72);
+  transition: color 0.2s;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.description
+{
+  /* font-family: 'Raleway-Light'; */
+  font-size: medium;
+  color: rgb(45,60,72);
+  max-width: 100%;
+}
+
+.price
+{
+  color: gray;
+  font-size: medium;
+  font-weight: bold;
+}

@@ -75,8 +75,74 @@
             </div>
         </section>
 
-        <section id="best-dishes" class="p-4 mt-0">
+        <section id="best-dishes" class="p-4">
             <h4 class="text-center">Best dishes around</h4>
+
+            <div class="row">
+
+                <div class="col-lg-6 mt-4">
+     
+                    <a class="itemCard" href="#" data-toggle="modal" data-target="#showItemModal" data-name="{{$featuredItem->name}}" data-nameFallback="{{$featuredItem->translate($fallback)->name}}" data-desc="{{$featuredItem->desc}}" data-descFallback="{{$featuredItem->translate($fallback)->desc}}" data-imgSrc="{{ asset($featuredItem->picture) }}" data-price="{{$featuredItem->price}}" data-vege="{{$featuredItem->vegetarian }}" data-vega="{{$featuredItem->vegan }}" data-gf="{{$featuredItem->gluten_free }}">
+     
+                    <div class="card p-0 menuItem">
+    
+                        <img src="burger.jpg" alt="" class="img-rounded card-img-right flex-auto img-menu">
+
+                        <div class="card-body d-flex flex-column align-items-start pt-2 itemContent" >
+        
+                            <div class="card-title mt-2 mb-2">
+                                Burger
+                            </div>
+                            <p class="card-text description">
+                                Hamburger à l'avocat
+                            </p>
+                            <div class ="mt-auto d-flex">
+                                <div class="card-text price">
+                                12
+                                </div>
+            
+                                <div class="ml-2 d-flex align-items-center">
+
+                                </div>
+            
+                            </div>
+                        </div>
+                   </div>
+                   </a>
+                </div>
+
+                <div class="col-lg-6 mt-4">
+     
+                        <a class="itemCard" href="#" data-toggle="modal" data-target="#showItemModal" data-name="{{$featuredItem->name}}" data-nameFallback="{{$featuredItem->translate($fallback)->name}}" data-desc="{{$featuredItem->desc}}" data-descFallback="{{$featuredItem->translate($fallback)->desc}}" data-imgSrc="{{ asset($featuredItem->picture) }}" data-price="{{$featuredItem->price}}" data-vege="{{$featuredItem->vegetarian }}" data-vega="{{$featuredItem->vegan }}" data-gf="{{$featuredItem->gluten_free }}">
+         
+                        <div class="card p-0 menuItem">
+        
+                            <img src="oeuf.jpg" alt="" class="img-rounded card-img-right flex-auto img-menu">
+    
+                            <div class="card-body d-flex flex-column align-items-start pt-2 itemContent" >
+            
+                                <div class="card-title mt-2 mb-2">
+                                    Oeuf mimosa
+                                </div>
+                                <p class="card-text description">
+                                    Délicieux oeuf mimosa maison
+                                </p>
+                                <div class ="mt-auto d-flex">
+                                    <div class="card-text price">
+                                    6
+                                    </div>
+                
+                                    <div class="ml-2 d-flex align-items-center">
+                                        <span class="badge badge-pill badge-info mr-1">V</span>
+                                        <span class="badge badge-pill badge-warning">GF</span>
+                                    </div>
+                
+                                </div>
+                            </div>
+                       </div>
+                       </a>
+                    </div>
+            </div>
 
         </section>
 
